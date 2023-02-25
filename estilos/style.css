@@ -107,7 +107,7 @@ h2{
 .img{
     height: 350px;
     background-size: cover;
-    background-image: url('imagen/retrato.JPG');
+    background-image: url(imagen/retrato.JPG);
     background-repeat: no-repeat;
     background-position: center;
  }
