@@ -6,7 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
-article{
+#inicio ,article{
     scroll-margin-top: 60px;
 }
 #subir i{
@@ -56,7 +56,6 @@ header div{
 
 
 h1{
-    scroll-margin-top: 60px;
     color:rgb(189, 189, 189);
     font-family: 'Noto Serif JP', serif;
     font-size: 40px;
