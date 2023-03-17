@@ -38,7 +38,7 @@ header{
     align-items: center;
 }
 /*Modo oscuro*/
-header div{
+header button{
     
     display: flex;
     position: absolute;
@@ -61,7 +61,19 @@ h1{
     font-size: 40px;
     margin: 50px 0 60px 0;
 }
-
+/* Ocultar */
+.oculto{
+    
+    margin-right: 20px;
+    border: 0px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#down{
+    display: none;
+}
 /* Cuerpo */
 main {
     display: flex;
@@ -117,9 +129,10 @@ h2{
     margin-left: 30px;
 }
 .izquierda{
-   
+
    width: 20%;
     margin-right: 30px;
+    transition: all 2s ease;
 }
 nav{
     padding: 35px 0px 10px 30px;

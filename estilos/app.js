@@ -47,17 +47,23 @@ function sections(){
     });
 }
 
-
-
-
-/**window.addEventListener('scroll', ()=>{
-    const article = document.querySelector('.art') ;
-    const posicion = article.getBoundingClientRect().top;
-    console.log(posicion);
-    let screen= window.innerHeight/ 1.8;
-    if(posicion < screen){
-        article.setAttribute('class' ,'active' )
+function ocultar(){
+    //compara si la fecha de arriba esta activada
+    if (document.getElementById("up").style.display=="block"){
+        //oculta flechas para arriba y muestra la de abajo 
+        document.getElementById("up").style.display="none"
+        document.getElementById("down").style.display="block"
+        //oculta seccion
+        document.getElementById("izq").style.display="none"
+        document.getElementById("izq").style.transform="scaleY(-200px)"
     }else{
-        article.setAttribute('class' ,'art' );
+        //muestra flechas para arriba y oculta la de abajo 
+        document.getElementById("down").style.display="none"
+        document.getElementById("up").style.display="block"
+        //muestra seccion
+        document.getElementById("izq").style.display="block"
+        document.getElementById("izq").style.transform="scaleY(1px)"
     }
-})**/
+    
+
+}
